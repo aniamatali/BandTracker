@@ -29,7 +29,7 @@ namespace BandTracker.Controllers
       }
 
       [HttpPost("/Venues/Delete")]
-      public ActionResult DeletePage()
+      public ActionResult CloseVenue()
       {
         Venue.DeleteAll();
         return View();
