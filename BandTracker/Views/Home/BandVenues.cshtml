@@ -1,0 +1,12 @@
+<p>@Model["band"].GetDescription()</p>
+<p>@Model["band"].GetPerformanceDate()</p>
+
+@foreach (var venue in Model["venue"])
+{
+  <p><a href = "/venues/@venue.GetId()">@venue.GetName()<a/></p>
+}
+
+
+<br>
+<a href="/Band/@Model["band"].GetId()/venues/new">Add Venues</a>
+<a href="/">Home</a>
