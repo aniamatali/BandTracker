@@ -110,5 +110,30 @@ namespace BandTracker.Controllers
         return View(model);
       }
 
+      [HttpPost("/Venues/{id}/Delete")]
+      public ActionResult DeleteVenue(int id)
+      {
+        Venue foundVenue = Venue.Find(id);
+        foreach (Band classBand in foundVenue.GetBands())
+          {
+            classBand.DeleteBands();
+          }
+        foundVenue.DeleteVenue();
+        return View("CloseVenue");
+      }
+
+      [HttpPost("/BandList")]
+      public ActionResult DeletePage2()
+      {
+        Band.DeleteAll();
+        return View();
+      }
+
+      [HttpGet("/BandList")]
+      public ActionResult BandList()
+      {
+        return View(Band.GetAlphaList());
+      }
+
     }
   }

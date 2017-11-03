@@ -242,5 +242,29 @@ namespace BandTracker.Models
         return venues;
       }
 
+      public static List<Band> GetAlphaList()
+      {
+        List<Band> allBands = new List<Band> {};
+        MySqlConnection conn = DB.Connection();
+        conn.Open();
+        var cmd = conn.CreateCommand() as MySqlCommand;
+        cmd.CommandText = @"SELECT * FROM bands ORDER BY performancedate;";
+        var rdr = cmd.ExecuteReader() as MySqlDataReader;
+        while(rdr.Read())
+        {
+          int bandId = rdr.GetInt32(0);
+          string bandDescription = rdr.GetString(1);
+          string bandPerformanceDate = rdr.GetString(2);
+          Band newBand = new Band(bandDescription, bandPerformanceDate, bandId);
+          allBands.Add(newBand);
+        }
+        conn.Close();
+        if (conn != null)
+        {
+          conn.Dispose();
+        }
+        return allBands;
+      }
+
     }
   }

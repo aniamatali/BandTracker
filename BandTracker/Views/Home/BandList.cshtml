@@ -1,0 +1,10 @@
+@foreach (var band in @Model)
+{
+<p>@band.GetDescription()      @band.GetPerformanceDate()</p>
+}
+<br>
+<a href="/">Home</a>
+
+<form action="/BandList/" method="post">
+  <button type="submit" class="btn btn-success">DESTROY ALL BANDS</button>
+</form>
