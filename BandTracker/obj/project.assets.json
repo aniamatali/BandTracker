@@ -9655,11 +9655,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Isaac\\desktop\\BandTracker.Solution\\BandTracker\\BandTracker.csproj",
+      "projectUniqueName": "C:\\Users\\Isaac\\desktop\\BandTracker.Solution\\bandtracker\\BandTracker.csproj",
       "projectName": "BandTracker",
-      "projectPath": "C:\\Users\\Isaac\\desktop\\BandTracker.Solution\\BandTracker\\BandTracker.csproj",
+      "projectPath": "C:\\Users\\Isaac\\desktop\\BandTracker.Solution\\bandtracker\\BandTracker.csproj",
       "packagesPath": "C:\\Users\\Isaac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Isaac\\desktop\\BandTracker.Solution\\BandTracker\\obj\\",
+      "outputPath": "C:\\Users\\Isaac\\desktop\\BandTracker.Solution\\bandtracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Isaac\\AppData\\Roaming\\NuGet\\NuGet.Config"
