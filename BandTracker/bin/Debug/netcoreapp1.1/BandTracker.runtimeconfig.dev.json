@@ -1,8 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/Users/alvinniamatali/.dotnet/store/|arch|/|tfm|",
-      "/Users/alvinniamatali/.nuget/packages"
+      "C:\\Users\\Isaac\\.nuget\\packages"
     ]
   }
 }

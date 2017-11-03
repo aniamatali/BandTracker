@@ -17,3 +17,12 @@ C:/Users/Isaac/desktop/BandTracker.Solution/BandTracker/obj/Debug/netcoreapp1.1/
 /Users/alvinniamatali/Desktop/BandTracker/BandTracker/obj/Debug/netcoreapp1.1/BandTracker.AssemblyInfo.cs
 /Users/alvinniamatali/Desktop/BandTracker/BandTracker/obj/Debug/netcoreapp1.1/BandTracker.dll
 /Users/alvinniamatali/Desktop/BandTracker/BandTracker/obj/Debug/netcoreapp1.1/BandTracker.pdb
+C:\Users\Isaac\desktop\bandtracker\bandtracker\bin\Debug\netcoreapp1.1\BandTracker.deps.json
+C:\Users\Isaac\desktop\bandtracker\bandtracker\bin\Debug\netcoreapp1.1\BandTracker.runtimeconfig.json
+C:\Users\Isaac\desktop\bandtracker\bandtracker\bin\Debug\netcoreapp1.1\BandTracker.runtimeconfig.dev.json
+C:\Users\Isaac\desktop\bandtracker\bandtracker\bin\Debug\netcoreapp1.1\BandTracker.dll
+C:\Users\Isaac\desktop\bandtracker\bandtracker\bin\Debug\netcoreapp1.1\BandTracker.pdb
+C:\Users\Isaac\desktop\bandtracker\bandtracker\obj\Debug\netcoreapp1.1\BandTracker.csproj.CoreCompileInputs.cache
+C:\Users\Isaac\desktop\bandtracker\bandtracker\obj\Debug\netcoreapp1.1\BandTracker.AssemblyInfo.cs
+C:\Users\Isaac\desktop\bandtracker\bandtracker\obj\Debug\netcoreapp1.1\BandTracker.dll
+C:\Users\Isaac\desktop\bandtracker\bandtracker\obj\Debug\netcoreapp1.1\BandTracker.pdb

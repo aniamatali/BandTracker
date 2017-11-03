@@ -1,8 +1,15 @@
+.wrapper {
+  margin-top:1em;
+  width:90%;
+  background: linear-gradient(135deg, #30181b 53%,#1c0c0e 100%);
+}
+
 .wrapper_nav {
-  background-color: #202529;
+  background-color: #0f0708;
   display: inline-block;
   width:100%;
   color:white;
+  border-bottom:1px solid #965e64;
 }
 
 .wrapper_nav a {
@@ -11,9 +18,54 @@
 }
 
 body {
-  background-color:black;
+  background-color:#1c0c0e;
 }
 
 svg {
   fill: currentColor;
+}
+
+.logo {
+  padding: 0;
+  margin: 4px 0 0 0;
+}
+
+.logo_img {
+  width:115px;
+  height: 115px;
+  float:left;
+  margin-right:1em;
+}
+
+.logo_right {
+  float:left;
+  margin-top: .6em;
+  font-family: 'Rubik Mono One', sans-serif;
+  color:white;
+}
+
+.logo_right p {
+  color:#e56262;
+}
+
+.btn-danger {
+  width:30%;
+  margin-left:1em;
+}
+
+label {
+  color:white;
+  text-align:left;
+}
+
+#inputVenue {
+  background-color: #705c5e;
+  margin-left:1em;
+  width:30%;
+  margin-bottom:10px;
+  color:white;
+}
+
+.bottomwrapper {
+  margin-left:1em;
 }

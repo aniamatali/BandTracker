@@ -1,21 +1,43 @@
 @{
   Layout = "_Layout";
 }
+<div class="container-fluid">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wrapper_nav">
+          <div class="nav_left">
+            <a href="/Venues">View All Venues</a>
+            <a href="/BandList">View All Bands</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="wrapper_nav">
-  <div class="nav_left">
-    <a href="/Venues">View All Venues</a>
-    <a href="/BandList">View All Bands</a>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wrapper_heading">
+          <div class="logo">
+            <img class="logo_img" src="../images/headphones.png">
+            <div class="logo_right">
+              <h2>BandTracker</h2>
+              <p>Track where your next concert is!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bottomwrapper">
+        <form action='/venues' method="post">
+          <label for="inputVenue">Enter the <strong>VENUE:</strong></label>
+          <input name="inputVenue" class="form-control" id="inputVenue">
+          <button type="submit" class="btn btn-danger">Add Venue</button>
+        </form>
+      </div>
+      </div>
+    </div>
   </div>
 </div>
-
-<div class="wrapper_heading">
-  <h1>BandTracker</h1>
-<img src="../images/si-glyph-guitar.svg" width=130px ></img>
-
-</div>
-<form action='/venues' method="post">
-  <label for="inputVenue">Enter your Venue:</label>
-  <input name="inputVenue" class="form-control" id="inputVenue">
-  <button type="submit" class="btn btn-success">Go.</button>
-</form>
