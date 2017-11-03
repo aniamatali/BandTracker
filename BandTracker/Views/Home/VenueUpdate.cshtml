@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+
+<form action="/Venues/@Model.GetId()/update2" method="post">
+    <label for="new-venue">New Name:</label>
+    <input type="text" name="new-venue" value="@Model.GetName()">
+    <button type="submit">Change Venue Name</button>
+</form>
+
+<br>
+
+
+<a href="/">Main</a>

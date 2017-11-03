@@ -1,6 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+
+
 @foreach (var venue in Model)
 {
   <p><a href = "/venues/@venue.GetId()">@venue.GetName()</a></p>;
+    <a href="/Venues/@venue.GetId()/update2">Edit</a>
 }
 <form action="/Venues" method="post">
   <label for="inputVenue">Add another Venue:</label>

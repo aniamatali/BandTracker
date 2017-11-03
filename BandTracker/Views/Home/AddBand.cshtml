@@ -1,3 +1,7 @@
+@{
+  Layout = "_Layout";
+}
+
 <form action='/Venues/@Model["venue"].GetId()' method='post'>
   <input id='venue-id' name='venue-id' type='hidden' value='@Model["venue"].GetId()'>
   <label for='inputBand'>Enter Band Name:</label>

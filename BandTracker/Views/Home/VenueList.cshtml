@@ -1,14 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+
 <p>@Model["venue"].GetName()</p>
 
 @if (@Model["bands"].Count != 0)
 {
   @foreach (var band in @Model["bands"])
   {
-  @band.GetPerformanceDate() <br> <a href="/bands/@band.GetId()">@band.GetDescription()</a><br>
+  <a href="/bands/@band.GetId()">@band.GetDescription()</a> <br> @band.GetPerformanceDate()<br>
   }
 }
-
-
 
 
 <form action="/Venues/@Model["venue"].GetId()/Delete" method="post">
