@@ -1,0 +1,99 @@
+body {
+  background-color:#1c0c0e;
+}
+
+.wrapper {
+  margin-top:1em;
+}
+
+.tablewrapper {
+  color:white;
+}
+
+.wrapper_nav {
+  background-color: #0f0708;
+  display: inline-block;
+  width:100%;
+  color:white;
+  border-bottom:1px solid #965e64;
+}
+
+.wrapper_nav a {
+  color:white;
+  margin-right:15px;
+}
+
+.col-md-12 {
+  padding:0;
+}
+
+.col-md-10{
+  background-image:url("../images/bandbg.jpg");
+  background-repeat:no-repeat;
+}
+
+#venuebackground {
+  background-image:url("../images/venuebg.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+#venuesidebg {
+  background-image:url("../images/bandbg.jpg");
+  background-repeat:no-repeat;
+}
+
+.col-md-2 {
+  background-image:url("../images/venuebg.jpg");
+  background-repeat:no-repeat;
+}
+
+#inputVenue {
+  background-color: #705c5e;
+  margin-left:1em;
+  width:30%;
+  margin-bottom:10px;
+  color:white;
+}
+
+.wrapper {
+  margin-top:1em;
+}
+
+
+.middlewrapper {
+  margin-top:1em;
+}
+
+.venuewrapper {
+  margin-top:2em;
+}
+
+.venuewrapper input {
+  height:100px;
+  font-size:20px;
+}
+
+li {
+  color: white;
+}
+
+label {
+  color:white;
+}
+
+.btn-danger {
+  margin-top:2em;
+}
+
+h2 {
+  color:white;
+}
+
+button a {
+  color:white;
+}
+
+#cancelvenuebtn {
+  margin-top:4em;
+}

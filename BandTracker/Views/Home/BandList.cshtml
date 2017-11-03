@@ -1,17 +1,52 @@
 @{
-  Layout = "_Layout";
+  Layout = "_LayoutTwo";
 }
 
+<div class="container-fluid">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wrapper_nav">
+          <div class="nav_left">
+            <a href="/">Main</a>
+            <a href="/Venues">Venues</a>
+            <a href="/BandList">Bands</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-@foreach (var band in @Model)
-{
-<p>@band.GetDescription()</p>
-<p>@band.GetPerformanceDate()</p>
-<a href="/Venues/@band.GetId()/update">Edit</a>
-}
-<br>
-<a href="/">Home</a>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="wrapper_heading">
+          <h2>All Bands</h2>
+          @foreach (var band in @Model)
+          {
+            <ul>
+            <li>@band.GetDescription()</li>
+            <li>@band.GetPerformanceDate()</li>
+            <li><a href="/Venues/@band.GetId()/update">Edit</a></li>
+            </ul>
+          }
+          <br>
+          <button class="btn btn-danger"><a href="/">Home</a></button>
+          <form action="/BandList/" method="post">
+            <button type="submit" class="btn btn-danger">Band Strike</button>
+          </form>
+        </div>
+      </div>
 
-<form action="/BandList/" method="post">
-  <button type="submit" class="btn btn-success">DESTROY ALL BANDS</button>
-</form>
+
+
+      <div class="col-md-10">
+
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-md-12">
+
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

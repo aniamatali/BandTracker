@@ -1,25 +1,38 @@
 @{
-  Layout = "_Layout";
+  Layout = "_LayoutTwo";
 }
 
+<div class="container-fluid">
+  <div class="wrapper">
+  <div class="row">
+    <div class="col-md-12">
 
-<p>@Model["venue"].GetName()</p>
+      <h2>@Model["venue"].GetName()</h2>
 
-@if (@Model["bands"].Count != 0)
-{
-  @foreach (var band in @Model["bands"])
-  {
-  <a href="/bands/@band.GetId()">@band.GetDescription()</a> <br> @band.GetPerformanceDate()<br>
-  }
-}
+      @if (@Model["bands"].Count != 0)
+      {
+        @foreach (var band in @Model["bands"])
+        {
+          <ul>
+          <li><a href="/bands/@band.GetId()">@band.GetDescription()</a></li>
+          <p>Performing on: @band.GetPerformanceDate()</p>
+          </ul>
+        }
+      }
 
-
-<form action="/Venues/@Model["venue"].GetId()/Delete" method="post">
-  <button type="submit" class="btn btn-success">Remove this Venue</button>
-</form>
-
-<a href="/Venues">View All Venues</a>
-<br>
-<a href="/Venues/@Model["venue"].GetId()/bands/new">Add Band</a>
-
-<a href="/">Home</a>
+    </div>
+    <div class="row">
+        <ul>
+          <li><a href="/Venues">View All Venues</a></li>
+          <li><a href="/Venues/@Model["venue"].GetId()/bands/new">Add Band</a></li>
+          <li><a href="/">Home</a></li>
+        </ul>
+        <div class="col-md-12">
+          <form action="/Venues/@Model["venue"].GetId()/Delete" method="post">
+            <button type="submit" class="btn btn-danger">Remove this Venue</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

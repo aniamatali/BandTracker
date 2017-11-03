@@ -1,21 +1,48 @@
 @{
-  Layout = "_Layout";
+  Layout = "_LayoutTwo";
 }
 
+<div class="container-fluid">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wrapper_nav">
+          <div class="nav_left">
+            <a href ="/">Main</a>
+            <a href="/Venues">Venues</a>
+            <a href="/BandList">Bands</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-@foreach (var venue in Model)
-{
-  <p><a href = "/venues/@venue.GetId()">@venue.GetName()</a></p>;
-    <a href="/Venues/@venue.GetId()/update2">Edit</a>
-}
-<form action="/Venues" method="post">
-  <label for="inputVenue">Add another Venue:</label>
-  <input name="inputVenue" class="form-control" id="inputVenue">
-  <button type="submit" class="btn btn-success">Go.</button>
-</form>
+    <div class="row">
+      <div class="col-md-2" id="venuesidebg">
+        <div class="middlewrapper">
+          <h2>Venues</h2>
+        @foreach (var venue in Model)
+        {
+          <ul>
+          <li><a href = "/venues/@venue.GetId()">@venue.GetName()</a></li>
+          <a href="/Venues/@venue.GetId()/update2">Edit</a>
+          </ul>
+        }
+        <form action="/Venues/Delete" method="post">
+          <button type="submit" class="btn btn-danger" id="cancelvenuebtn">Cancel all Venues</button>
+        </form>
+      </div>
 
-<form action="/Venues/Delete" method="post">
-  <button type="submit" class="btn btn-success">Cancel all Venues</button>
-</form>
+    </div>
+    <div class="col-md-10" id="venuebackground">
+      <div class="venuewrapper">
+      <form action="/Venues" method="post">
+        <label for="inputVenue">Add another Venue:</label>
+        <input name="inputVenue" class="form-control" id="inputVenue">
+        <button type="submit" class="btn btn-danger">Go.</button>
+      </form>
+    </div>
+    </div>
+  </div>
 
-<a href="/">Go home</a>
+  </div>
+</div>

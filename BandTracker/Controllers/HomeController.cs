@@ -107,7 +107,7 @@ namespace BandTracker.Controllers
         List<Venue> allVenues = selectedBand.GetVenues();
         model.Add("band", selectedBand);
         model.Add("venue", allVenues);
-        return View(model);
+        return View("venuesForm", model);
       }
 
       [HttpPost("/Venues/{id}/Delete")]
