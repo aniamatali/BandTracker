@@ -1,0 +1,22 @@
+<p>@Model["venue"].GetName()</p>
+
+@if (@Model["bands"].Count != 0)
+{
+  @foreach (var band in @Model["bands"])
+  {
+  @band.GetPerformanceDate() <br> <a href="/bands/@band.GetId()">@band.GetDescription()</a><br>
+  }
+}
+
+
+
+
+<form action="/Venues/@Model["venue"].GetId()/Delete" method="post">
+  <button type="submit" class="btn btn-success">Remove this Venue</button>
+</form>
+
+<a href="/Venues">View All Venues</a>
+<br>
+<a href="/Venues/@Model["venue"].GetId()/bands/new">Add Band</a>
+
+<a href="/">Home</a>

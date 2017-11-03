@@ -34,7 +34,18 @@ namespace BandTracker.Controllers
         Venue.DeleteAll();
         return View();
       }
-      
+
+      [HttpGet("/Venues/{id}")]
+      public ActionResult VenueList(int id)
+      {
+        Dictionary<string, object> model = new Dictionary<string, object>();
+        Venue selectedVenue = Venue.Find(id);
+        List<Band> venueBands = selectedVenue.GetBands();
+        model.Add("venue", selectedVenue);
+        model.Add("bands", venueBands);
+        return View(model);
+      }
+
 
     }
   }
