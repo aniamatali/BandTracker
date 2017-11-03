@@ -1,6 +1,8 @@
 @foreach (var band in @Model)
 {
-<p>@band.GetDescription()      @band.GetPerformanceDate()</p>
+<p>@band.GetDescription()</p>
+<p>@band.GetPerformanceDate()</p>
+<a href="/Venues/@band.GetId()/update">Edit</a>
 }
 <br>
 <a href="/">Home</a>

@@ -266,5 +266,52 @@ namespace BandTracker.Models
         return allBands;
       }
 
+      public static void UpdateBand(int id)
+    {
+        MySqlConnection conn = DB.Connection();
+        conn.Open();
+        var cmd = conn.CreateCommand() as MySqlCommand;
+        cmd.CommandText = @"UPDATE FROM bands WHERE band_id = @id;";
+
+        MySqlParameter VenueId = new MySqlParameter();
+        VenueId.ParameterName = "@id";
+        VenueId.Value = id;
+        cmd.Parameters.Add(VenueId);
+
+        cmd.ExecuteNonQuery();
+        conn.Close();
+        if (conn != null)
+        {
+            conn.Dispose();
+        }
+    }
+
+    public void UpdateBandName(string newBandName)
+    {
+      MySqlConnection conn = DB.Connection();
+      conn.Open();
+      var cmd = conn.CreateCommand() as MySqlCommand;
+      cmd.CommandText = @"UPDATE bands SET description = @newBandName WHERE id = @searchId;";
+
+      MySqlParameter searchId = new MySqlParameter();
+      searchId.ParameterName = "@searchId";
+      searchId.Value = _id;
+      cmd.Parameters.Add(searchId);
+
+      MySqlParameter bandName = new MySqlParameter();
+      bandName.ParameterName = "@newBandName";
+      bandName.Value = newBandName;
+      cmd.Parameters.Add(bandName);
+
+      cmd.ExecuteNonQuery();
+      _description = newBandName;
+
+      conn.Close();
+      if (conn != null)
+      {
+          conn.Dispose();
+      }
+    }
+
     }
   }

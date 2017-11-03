@@ -135,5 +135,22 @@ namespace BandTracker.Controllers
         return View(Band.GetAlphaList());
       }
 
+      [HttpGet("/Venues/{id}/update")]
+    public ActionResult BandUpdate(int id)
+    {
+      Band thisBand = Band.Find(id);
+      return View(thisBand);
+    }
+
+    [HttpPost("/Venues/{id}/update")]
+    public ActionResult BandEdit(int id)
+    {
+      Band thisBand = Band.Find(id);
+      thisBand.UpdateBandName(Request.Form["new-name"]);
+      return RedirectToAction("BandList");
+    }
+
+
+
     }
   }
