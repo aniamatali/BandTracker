@@ -1,0 +1,14 @@
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\BandTrackerTest.deps.json
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\BandTrackerTest.runtimeconfig.json
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\BandTrackerTest.runtimeconfig.dev.json
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\obj\Debug\netcoreapp1.1\BandTrackerTest.csproj.CoreCompileInputs.cache
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\obj\Debug\netcoreapp1.1\BandTrackerTest.AssemblyInfo.cs
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\BandTrackerTest.dll
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\BandTrackerTest.pdb
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\BandTracker.dll
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\bin\Debug\netcoreapp1.1\BandTracker.pdb
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\obj\Debug\netcoreapp1.1\BandTrackerTest.dll
+C:\Users\Isaac\desktop\BandTracker.Solution\BandTracker.tests\obj\Debug\netcoreapp1.1\BandTrackerTest.pdb
