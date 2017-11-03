@@ -83,5 +83,32 @@ namespace BandTracker.Controllers
         return View(model);
       }
 
+      [HttpPost("/Bands/{id}")]
+      public ActionResult BandVenues2(int id)
+      {
+
+        Venue newVenue = new Venue(Request.Form["inputVenue"]);
+        newVenue.Save();
+
+        Dictionary<string, object> model = new Dictionary<string, object>();
+        Band selectedBand = Band.Find(Int32.Parse(Request.Form["Band-id"]));
+        selectedBand.AddVenue(newVenue);
+        List<Venue> allVenues = selectedBand.GetVenues();
+        model.Add("band", selectedBand);
+        model.Add("venue", allVenues);
+        return View("BandVenues", model);
+      }
+
+      [HttpGet("/Band/{id}/venues/new")]
+      public ActionResult venuesForm(int id)
+      {
+        Dictionary<string, object> model = new Dictionary<string, object>();
+        Band selectedBand = Band.Find(id);
+        List<Venue> allVenues = selectedBand.GetVenues();
+        model.Add("band", selectedBand);
+        model.Add("venue", allVenues);
+        return View(model);
+      }
+
     }
   }
