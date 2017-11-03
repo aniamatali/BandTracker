@@ -57,6 +57,20 @@ namespace BandTracker.Controllers
         return View(model);
       }
 
+      [HttpPost("/Venues/{id}")]
+      public ActionResult BandDetailsPost(int id)
+      {
+        string BandDescription = Request.Form["inputBand"];
+        Band newBand = new Band(BandDescription,(Request.Form["inputDate"]));
+        newBand.Save();
+        Dictionary<string, object> model = new Dictionary<string, object>();
+        Venue selectedVenue = Venue.Find(Int32.Parse(Request.Form["venue-id"]));
+        selectedVenue.AddBand(newBand);
+        List<Band> venueBands = selectedVenue.GetBands();
+        model.Add("bands", venueBands);
+        model.Add("venue", selectedVenue);
+        return View("VenueList", model);
+      }
 
     }
   }
