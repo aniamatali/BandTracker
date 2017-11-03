@@ -1,0 +1,10 @@
+<form action='/Venues/@Model["venue"].GetId()' method='post'>
+  <input id='venue-id' name='venue-id' type='hidden' value='@Model["venue"].GetId()'>
+  <label for='inputBand'>Enter Band Name:</label>
+  <input id='inputBand' name='inputBand' type='text'>
+  <label for='inputDate'>Enter Performance Date</label>
+  <input id='inputDate' name='inputDate' type='date'>
+  <button type='submit'>Add Band to Venue</button>
+</form>
+
+<a href="/">Home</a>
