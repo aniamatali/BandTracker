@@ -1,0 +1,19 @@
+.wrapper_nav {
+  background-color: #202529;
+  display: inline-block;
+  width:100%;
+  color:white;
+}
+
+.wrapper_nav a {
+  color:white;
+  margin-right:15px;
+}
+
+body {
+  background-color:black;
+}
+
+svg {
+  fill: currentColor;
+}
