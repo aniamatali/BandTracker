@@ -1,4 +1,4 @@
-# _Hair Salon Appointment Tracker_
+# _Band Tracker_
 
 #### _Solo Project 8 C# - Epicodus Seattle_
 
